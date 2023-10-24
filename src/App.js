@@ -12,9 +12,13 @@ function App() {
   const [result, setResult] = useState(null);
   const [playList, setPlayList] = useState([]);
 
+  const [resultLoading, setLoadingResult] = useState(false);
+
   const handleSearch = async () => {
+    setLoadingResult(true);
     const data = await Spotify.search(searchText);
     setResult(data);
+    setLoadingResult(false);
   };
 
   return (
@@ -32,6 +36,7 @@ function App() {
           result={result}
           setPlayList={setPlayList}
           playList={playList}
+          resultLoading={resultLoading}
         />
         <PlayListCompo playList={playList} setPlayList={setPlayList} />
       </div>
