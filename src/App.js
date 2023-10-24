@@ -6,6 +6,7 @@ import ResultCompo from "./components/reultcompoent";
 import PlayListCompo from "./components/playlistcompo";
 import { useEffect, useState } from "react";
 import Spotify from "./api/Spotify";
+import image from "./assets/images/background_img.jpg";
 
 function App() {
   const [searchText, setSearchText] = useState(null);
@@ -24,7 +25,7 @@ function App() {
   return (
     <div
       className="bg-background w-full  bg-cover "
-      style={{ minHeight: "100vh" }}
+      style={{ minHeight: "100vh", backgroundImage: `url(${image})` }}
     >
       <Header />
       <div className="mt-20 flex flex-col justify-center items-center">
