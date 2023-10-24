@@ -32,14 +32,19 @@ function App() {
         <Input setSearchText={setSearchText} />
         <Button text="search" onClick={handleSearch} />
       </div>
-      <div className="grid grid-cols-2 gap-4 mt-10 px-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-10 mt-10">
         <ResultCompo
           result={result}
           setPlayList={setPlayList}
           playList={playList}
           resultLoading={resultLoading}
+          className="flex flex-wrap"
         />
-        <PlayListCompo playList={playList} setPlayList={setPlayList} />
+        <PlayListCompo
+          playList={playList}
+          setPlayList={setPlayList}
+          className="flex flex-wrap"
+        />
       </div>
       <Footer />
     </div>

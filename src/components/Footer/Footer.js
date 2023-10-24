@@ -13,7 +13,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="md:space-x-4">
-          <h1 className="transition-all hover:text-blue-400">UMER'S GROUP</h1>
+          <h1 className="transition-all hover:text-blue-400">JAMMING</h1>
         </div>
         <div className="md:flex items-center space-x-4">
           <div className="w-full md:w-64">
