@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         background:
-          "url('C:\Users\Lenovo\Desktop\Tasks\Spotify\jamminclone\src\assets\images\background_img.jpg')",
+          "url('/home/rashid/Documents/course/jammingclone/src/assets/images/background_img.jpg')",
       },
     },
   },
